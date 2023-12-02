@@ -9,8 +9,9 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,200;1,600&display=swap"
       rel="stylesheet"
     />
-    <link href="CSS/style.css" rel="stylesheet" />
-    <link href="CSS/general.css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/general.css" />
+    <link rel="stylesheet" href="CSS/media.css " />
     <title>Omnifoos</title>
   </head>
   <body>
@@ -29,17 +30,21 @@
       <a href="#">
         <img class="logo" alt="The Omifood logo" src="img/omnifood-logo.png" />
       </a>
-      <nav>
+      <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">How it works</a></li>
-          <li><a class="main-nav-link" href="#">Meals</a></li>
-          <li><a class="main-nav-link" href="#">Testimonial</a></li>
-          <li><a class="main-nav-link" href="#">Pricing</a></li>
+          <li><a class="main-nav-link" href="#how">How it works</a></li>
+          <li><a class="main-nav-link" href="#meals">Meals</a></li>
+          <li><a class="main-nav-link" href="#testmoials">Testimonial</a></li>
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
           <li>
-            <a class="main-nav-link last-nav" href="#">Try for free</a>
+            <a class="main-nav-link last-nav" href="#call">Try for free</a>
           </li>
         </ul>
       </nav>
+      <button class="btnnn-nav">
+        <ion-icon name="menu-outline" class="icon-nav"></ion-icon>
+        <ion-icon name="close-outline" class="icon-nav"></ion-icon>
+      </button>
     </header>
     <!-- end header, nav and logo -->
     <main>
@@ -55,7 +60,7 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn-full margin-btn"
+            <a href="#call" class="btn btn-full margin-btn"
               >Change your life, and start eating well</a
             >
             <a href="#" class="btn btn-outline">Learn more &darr;</a>
@@ -102,7 +107,7 @@
       </section>
       <!-- end the section hero -->
       <!-- start the section how -->
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="subheading">How it works</span>
           <h2 class="heading-secoundary">
@@ -170,7 +175,7 @@
       </section>
       <!-- end the section hero -->
       <!-- start the section meals -->
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container center-text">
           <span class="subheading">Meals</span>
           <h2 class="heading-secoundary">
@@ -295,7 +300,7 @@
       </section>
       <!-- end the section meals-->
       <!-- start the section testimonial -->
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testmoials">
         <div class="testimonial-container">
           <span class="subheading">Testimonial </span>
           <h2 class="heading-secoundary">Once you try it, you can't go back</h2>
@@ -395,7 +400,7 @@
       <!-- start the section price and feature -->
       <!-- start the price section -->
       <!-- start the first card -->
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
           <span class="subheading">Pricing</span>
           <h2 class="heading-secoundary">
@@ -515,7 +520,7 @@
       <!-- end the section praice -->
 
       <!-- The start call section -->
-      <section class="section-call">
+      <section class="section-call" id="call">
         <div class="container">
           <div class="call">
             <div class="call-text-box">
@@ -647,5 +652,6 @@
         </nav>
       </div>
     </footer>
+    <script defer src="js/script.js"></script>
   </body>
 </html>
